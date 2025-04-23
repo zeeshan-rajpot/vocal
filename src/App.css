@@ -7,12 +7,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 
+@font-face {
+    font-family: "Helvetica";
+    src: url("./fonts/Helvetica.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Helvetica Bold */
+  @font-face {
+    font-family: "Helvetica";
+    src: url("./fonts/Helvetica-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  /* Helvetica Oblique (Italic) */
+  @font-face {
+    font-family: "Helvetica";
+    src: url("./fonts/Helvetica-Oblique.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+  /* Helvetica Bold Oblique (Bold Italic) */
+  @font-face {
+    font-family: "Helvetica";
+    src: url("./fonts/Helvetica-BoldOblique.ttf") format("truetype");
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  /* Helvetica Light */
+  @font-face {
+    font-family: "Helvetica";
+    src: url("./fonts/helvetica-light-587ebe5a59211.ttf") format("truetype");
+    font-weight: 300; /* Light weight */
+    font-style: normal;
+  }
+  
+  /* Helvetica Compressed (OpenType) */
+  @font-face {
+    font-family: "Helvetica Compressed";
+    src: url("./fonts/helvetica-compressed-5871d14b6903a.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Helvetica Rounded Bold (OpenType) */
+  @font-face {
+    font-family: "Helvetica Rounded";
+    src: url("./fonts/helvetica-rounded-bold-5871d05ead8de.otf") format("opentype");
+    font-weight: bold;
+    font-style: normal;
+  }
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;  
   color: #c8c8c8;
-
+  font-family: "Helvetica", sans-serif;
 }
 
 input{
@@ -44,7 +99,7 @@ input:hover{
 
 @media (min-width: 992px) {
     .container {
-        max-width: 960px;
+        max-width: 990px;
     }
 }
 
@@ -54,6 +109,11 @@ input:hover{
     }
 }
 
+@media (min-width: 1300px) {
+    .container {
+        max-width: 1240px;
+    }
+}
 .postinfo h2{
 font-size: 1.4rem;
 }

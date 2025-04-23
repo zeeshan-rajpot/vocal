@@ -1,10 +1,15 @@
 import './App.css';
+import Footer from './Components/Footer';
+import Navbar from './Components/Navbar';
+import Communities from './Pages/Communities';
 
 function App() {
   return (
-    <div className="flex justify-center items-center h-screen bg-gray-100">
-      <h1 className="text-4xl font-bold text-blue-600">Welcome to Vocal</h1>
-    </div>
+    <>
+    <Navbar/>
+    <Communities/>
+    <Footer/>
+    </>
   );
 }
 

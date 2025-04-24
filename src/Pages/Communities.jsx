@@ -133,7 +133,7 @@ const Communities = () => {
           {filteredCommunities.map((community) => (
             <div
               key={community.id}
-              className="bg-white rounded-lg shadow-md overflow-hidden"
+              className="bg-white rounded-lg border overflow-hidden flex flex-col justify-between"
             >
               {/* Image with Title Overlay */}
               <div className="relative">
@@ -142,50 +142,35 @@ const Communities = () => {
                   alt={community.title}
                   className="w-full h-40 object-cover"
                 />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <h2 className="text-3xl font-bold text-white">
+                <div className="absolute inset-0 flex items-center justify-center border">
+                  <h2 className="text-3xl font-bold text-black">
                     {community.title}
                   </h2>
                 </div>
               </div>
+
               {/* Description and Stats */}
-              <div className="p-4">
-                <p className="text-sm text-gray-600 mb-2">
+              <div className="p-4 flex flex-col justify-between h-full">
+                <p className="text-[16px] text-[#737373] mb-1">
                   {community.description}
                 </p>
-                <div className="flex items-center space-x-4 text-xs text-gray-500">
-                  <div className="flex items-center">
-                    <svg
-                      className="w-4 h-4 mr-1"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5s3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18s-3.332.477-4.5 1.253"
-                      />
-                    </svg>
+
+                {/* Aligned Stats */}
+                <div className="block md:flex items-center justify-between text-[13px] text-gray-500">
+                  <div className="flex items-center whitespace-nowrap">
+                    <img
+                      src="/book.svg"
+                      alt=""
+                      className="w-[16px] h-[16px] mr-1"
+                    />
                     {community.stories} Stories
                   </div>
-                  <div className="flex items-center">
-                    <svg
-                      className="w-4 h-4 mr-1"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                      />
-                    </svg>
+                  <div className="flex items-center whitespace-nowrap">
+                    <img
+                      src="/person.svg"
+                      alt=""
+                      className="w-[16px] h-[16px] mr-1"
+                    />
                     {community.creators} Creators
                   </div>
                 </div>

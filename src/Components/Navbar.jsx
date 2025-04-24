@@ -13,8 +13,7 @@ const Navbar = () => {
       <div className="hidden lg:flex items-center justify-between px-4  container py-[1rem]">
         {/* Logo and Links */}
         <div className="flex items-center space-x-4 ">
-          
-          <img src="/logo.svg" alt="" className="w-[80px]"/>
+          <img src="/logo.svg" alt="" className="w-[80px]" />
           <a href="#" className="text-gray-600 hover:text-black">
             Home
           </a>
@@ -70,23 +69,9 @@ const Navbar = () => {
       <div className="lg:hidden flex items-center justify-between px-4 py-2">
         {/* Logo and Hamburger */}
         <div className="flex items-center">
-          <svg
-            className="w-6 h-6 mr-2"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M3 12h18M3 6h18M3 18h18"
-            />
-          </svg>
-          <span className="font-bold text-lg">VOCAL</span>
+          <img src="/logo.svg" alt="" className="w-[80px]" />
         </div>
-        <div className="flex items-center space-x-2">
+        <div className="flex items-center space-x-6">
           <svg
             className="w-5 h-5 text-gray-600"
             fill="none"
@@ -101,61 +86,37 @@ const Navbar = () => {
               d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
             />
           </svg>
-          <button onClick={toggleMenu}>
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          </button>
+          <a href="#" className="text-gray-600 hover:text-black">
+            Join
+          </a>
+          <a href="#" className="text-gray-600 hover:text-black">
+            Sign In
+          </a>
         </div>
       </div>
-
-      {/* Mobile Menu */}
-      {isOpen && (
-        <div className="md:hidden bg-gray-100">
-          <div className="flex justify-between px-4 py-2 border-b">
-            <a href="#" className="text-gray-600 hover:text-black">
-              Join
-            </a>
-            <a href="#" className="text-gray-600 hover:text-black">
-              Sign In
-            </a>
-          </div>
-          <div className="px-4 py-2 space-y-2">
-            <a href="#" className="block text-gray-600 hover:text-black">
-              Home
-            </a>
-            <a href="#" className="block text-gray-600 hover:text-black">
-              Top Stories
-            </a>
-            <a href="#" className="block text-gray-600 hover:text-black">
-              Latest Stories
-            </a>
-            <a href="#" className="block text-gray-600 hover:text-black">
-              Communities
-            </a>
-            <a href="#" className="block text-gray-600 hover:text-black">
-              Challenge
-            </a>
-            <a href="#" className="block text-gray-600 hover:text-black">
-              Resources
-            </a>
-            <a href="#" className="block text-gray-600 hover:text-black">
-              Vocal+
-            </a>
-          </div>
-        </div>
-      )}
+      <div className=" flex md:hidden items-center space-x-4  overflow-x-scroll p-3">
+        <a href="#" className="text-gray-600 hover:text-black">
+          Home
+        </a>
+        <a href="#" className="text-gray-600 hover:text-black text-nowrap">
+          Top Stories
+        </a>
+        <a href="#" className="text-gray-600 hover:text-black text-nowrap">
+          Latest Stories
+        </a>
+        <a href="#" className="text-gray-600 hover:text-black text-nowrap">
+          Communities
+        </a>
+        <a href="#" className="text-gray-600 hover:text-black text-nowrap">
+          Challenge
+        </a>
+        <a href="#" className="text-gray-600 hover:text-black text-nowrap">
+          Resources
+        </a>
+        <a href="#" className="text-gray-600 hover:text-black text-nowrap">
+          Vocal+
+        </a>
+      </div>
     </nav>
   );
 };

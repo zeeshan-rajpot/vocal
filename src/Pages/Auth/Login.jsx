@@ -49,7 +49,7 @@ const SignInForm = () => {
           <Link to="/forget-password" className="text-black underline hover:no-underline">
             Forget password?
           </Link>
-          <Link to="/Join" className=" text-black">
+          <Link to="/join" className=" text-black">
             Don't have an account?{" "}
             <span className="mr-1 text-black underline hover:no-underline">Join</span>
           </Link>

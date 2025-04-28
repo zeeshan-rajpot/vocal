@@ -6,12 +6,7 @@ const Navbar = () => {
 
   const links = [
     { label: "Home", path: "/" },
-    { label: "Top Stories", path: "/top-stories" },
-    { label: "Latest Stories", path: "/latest-stories" },
-    { label: "Communities", path: "/communities" },
-    { label: "Challenge", path: "/challenge" },
-    { label: "Resources", path: "/resources" },
-    { label: "Vocal+", path: "/vocal-plus" },
+    { label: "Pricing", path: "/pricing" },
   ];
 
   const authLinks = [
@@ -73,7 +68,7 @@ const Navbar = () => {
       </div>
 
       {/* Mobile View */}
-      <div className="lg:hidden flex items-center justify-between px-4 py-2">
+      <div className="lg:hidden flex items-center justify-between px-4 py-3  border-b-2">
         {/* Logo and Hamburger */}
         <div className="flex items-center">
           <img src="/logo.svg" alt="Logo" className="w-[80px]" />

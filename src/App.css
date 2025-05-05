@@ -61,6 +61,12 @@
     font-weight: bold;
     font-style: normal;
   }
+  @font-face {
+    font-family: "georgia";
+    src: url("./fonts/georgia.otf") format("opentype");
+    font-weight: 300;
+    font-style: normal;
+  }
 
 body {
   margin: 0;
@@ -68,7 +74,10 @@ body {
   box-sizing: border-box;  
   font-family: "Helvetica", sans-serif;
 }
-
+.georgia{
+  font-family: "georgia", sans-serif;
+  font-size: 19px;
+}
 input{
     color: #c8c8c8 !important;
 

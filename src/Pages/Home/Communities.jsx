@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 // Sample data for communities with categories
 const communitiesData = [
@@ -135,6 +136,7 @@ const Communities = () => {
               key={community.id}
               className="bg-white rounded-lg border overflow-hidden flex flex-col justify-between"
             >
+              <Link to="/subject_detail">
               {/* Image with Title Overlay */}
               <div className="relative">
                 <img
@@ -175,6 +177,8 @@ const Communities = () => {
                   </div>
                 </div>
               </div>
+              </Link>
+
             </div>
           ))}
         </div>

@@ -7,6 +7,8 @@ import Signup from "./Pages/Auth/Signup";
 import Communities from "./Pages/Home/Communities";
 import { Routes, Route, useLocation } from "react-router-dom";
 import Pricing from "./Pages/Pricing/Pricing";
+import SubjectDetail from "./Pages/Subject/SubjectDetail";
+import ChapterDetail from "./Pages/Subject/Chapter/ChapterDetail";
 const App = () => {
   const location = useLocation();
 
@@ -23,6 +25,8 @@ const App = () => {
         <Route path="/join" element={<Signup />} />
         <Route path="/forget-password" element={<ForgetPasswordForm />} />
         <Route path="/pricing" element={<Pricing />} />
+        <Route path="/subject_detail" element={<SubjectDetail />} />
+        <Route path="/chapter_detail" element={<ChapterDetail />} />
 
       </Routes>
 

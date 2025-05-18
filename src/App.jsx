@@ -9,6 +9,7 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import Pricing from "./Pages/Pricing/Pricing";
 import SubjectDetail from "./Pages/Subject/SubjectDetail";
 import ChapterDetail from "./Pages/Subject/Chapter/ChapterDetail";
+import DocsLayout from "./Pages/NewSubject/Index";
 const App = () => {
   const location = useLocation();
 
@@ -27,6 +28,7 @@ const App = () => {
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/subject_detail" element={<SubjectDetail />} />
         <Route path="/chapter_detail" element={<ChapterDetail />} />
+        <Route path="/DocsLayout" element={<DocsLayout/>} />
 
       </Routes>
 

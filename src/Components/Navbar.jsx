@@ -7,6 +7,7 @@ const Navbar = () => {
   const links = [
     { label: "Home", path: "/" },
     { label: "Pricing", path: "/pricing" },
+    { label: "DocsLayout", path: "/DocsLayout" },
   ];
 
   const authLinks = [

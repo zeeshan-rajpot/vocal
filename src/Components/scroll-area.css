@@ -1,0 +1,9 @@
+/* components/ui/scroll-area.css */
+[data-radix-scroll-area-viewport] {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+[data-radix-scroll-area-viewport]::-webkit-scrollbar {
+  display: none;
+}

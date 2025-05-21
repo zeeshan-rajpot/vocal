@@ -13,7 +13,7 @@ import DocsLayout from "./Pages/NewSubject/Index";
 const App = () => {
   const location = useLocation();
 
-  const hiddenPaths = ["/sign-in", "/join", "/forget-password"];
+  const hiddenPaths = ["/sign-in", "/join", "/forget-password" , "/DocsLayout"];
   const hideNavbarAndFooter = hiddenPaths.includes(location.pathname);
 
   return (
